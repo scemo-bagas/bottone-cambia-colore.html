@@ -1,0 +1,107 @@
+<!DOCTYPE html >
+<html>
+<head>
+
+<style>
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  animation-name: example;
+  animation-duration: 14s;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  position:relative;
+  
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+  
+}
+
+.container { 
+  height: 30px;
+  position: center;
+  border: 2px solid green; 
+}
+
+.vertical-center {
+  margin: 0;
+  position: center;
+  top: 20%;
+  -ms-transform: translateY(-20%);
+  transform: translateY(-20%);
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
+}
+        {
+            document.getElementById("btn").value="You have hovered mouse over me";
+        }
+
+
+
+  
+
+
+
+
+</style>
+</head>
+<body>
+
+
+
+<select id="myselect" onchange="change_myselect(this.value)">
+  <option value="">Choose an option:</option>
+  <option value="customers">Customers</option>
+  <option value="products">Products</option>
+  <option value="suppliers">Suppliers</option>
+</select>
+
+
+
+<p id="demo"></p>
+
+<div class="flex-container">
+<div class="container">
+  <div class="vertical-left">
+<button onmouseover="scapa()" id="btn" class="button"  type="button"
+onclick="scapa()"  >
+my if Click me to display Date and Time.</button>
+
+</div>
+</div>
+</div>
+
+<p id="demo"></p>
+
+<script src="var.js">
+</script>
+
+
+<script src="*timer.js"></script>
+
+
+
+
+    
+  
+
+
+</body>
+</html>
